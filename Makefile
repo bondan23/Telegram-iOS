@@ -44,7 +44,7 @@ BUCK_OPTIONS=\
 	--config custom.developmentProvisioningProfileWatchExtension="${DEVELOPMENT_PROVISIONING_PROFILE_WATCH_EXTENSION}" \
 	--config custom.distributionProvisioningProfileWatchExtension="${DISTRIBUTION_PROVISIONING_PROFILE_WATCH_EXTENSION}"
 
-BAZEL=$(shell which bazel)
+BAZEL=$(shell which bazelisk)
 
 ifneq ($(BAZEL_CACHE_DIR),)
 	export BAZEL_CACHE_FLAGS=\
@@ -388,8 +388,6 @@ bazel_app_debug_arm64:
 	build-system/prepare-build.sh Telegram distribution
 	"${BAZEL}" build Telegram/Telegram ${BAZEL_CACHE_FLAGS} ${BAZEL_COMMON_FLAGS} ${BAZEL_DEBUG_FLAGS} \
 	-c dbg \
-	--ios_multi_cpus=arm64 \
-	--watchos_cpus=armv7k,arm64_32 \
 	--verbose_failures
 
 bazel_app_arm64:

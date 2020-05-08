@@ -8,7 +8,7 @@ if [ "$APP_TARGET" == "" ]; then
 	exit 1
 fi
 
-BAZEL="$(which bazel)"
+BAZEL="$(which bazelisk)"
 if [ "$BAZEL" = "" ]; then
 	echo "bazel not found in PATH"
 	exit 1

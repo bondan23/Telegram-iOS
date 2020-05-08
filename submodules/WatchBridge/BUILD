@@ -28,4 +28,9 @@ swift_library(
     visibility = [
         "//visibility:public",
     ],
+    copts = [
+        '-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/WatchCommon/Host/PublicHeaders',
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/SSignalKit/SSignalKit/Source",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/WatchBridge/Impl/PublicHeaders"
+    ]
 )

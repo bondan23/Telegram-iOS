@@ -25,4 +25,7 @@ swift_library(
     visibility = [
         "//visibility:public",
     ],
+    copts = [
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/WebPBinding/PublicHeaders"
+    ]
 )

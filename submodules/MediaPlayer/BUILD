@@ -20,4 +20,7 @@ swift_library(
     visibility = [
         "//visibility:public",
     ],
+    copts = [
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/bazel-Telegram-iOS/submodules/FFMpegBinding/Public"
+    ]
 )

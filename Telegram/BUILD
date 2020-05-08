@@ -458,7 +458,7 @@ watchos_extension(
         ":WatchExtensionNSExtensionInfoPlist",
     ],
     minimum_os_version = "5.0",
-    provisioning_profile = "//build-input/data/provisioning-profiles:WatchExtension.mobileprovision",
+    # provisioning_profile = "//build-input/data/provisioning-profiles:WatchExtension.mobileprovision",
     resources = [
         ":TelegramWatchExtensionResources",
     ],
@@ -485,7 +485,7 @@ watchos_application(
         ":WatchAppCompanionInfoPlist",
     ],
     minimum_os_version = "5.0",
-    provisioning_profile = "//build-input/data/provisioning-profiles:WatchApp.mobileprovision",
+    # provisioning_profile = "//build-input/data/provisioning-profiles:WatchApp.mobileprovision",
     resources = [
         ":TelegramWatchAppResources",
         ":TelegramWatchAppAssets",
@@ -613,7 +613,7 @@ ios_extension(
         ":AppNameInfoPlist",
     ],
     minimum_os_version = "9.0",
-    provisioning_profile = "//build-input/data/provisioning-profiles:Share.mobileprovision",
+    # provisioning_profile = "//build-input/data/provisioning-profiles:Share.mobileprovision",
     deps = [":ShareExtensionLib"],
     frameworks = [
         ":TelegramUIFramework"
@@ -670,7 +670,7 @@ ios_extension(
         ":AppNameInfoPlist",
     ],
     minimum_os_version = "10.0",
-    provisioning_profile = "//build-input/data/provisioning-profiles:NotificationService.mobileprovision",
+    # provisioning_profile = "//build-input/data/provisioning-profiles:NotificationService.mobileprovision",
     deps = [":NotificationServiceExtensionLib"],
     frameworks = [
     ],
@@ -848,7 +848,7 @@ ios_application(
     ),
     families = ["iphone", "ipad"],
     minimum_os_version = "9.0",
-    provisioning_profile = "//build-input/data/provisioning-profiles:Telegram.mobileprovision",
+    # provisioning_profile = "//build-input/data/provisioning-profiles:Telegram.mobileprovision",
     entitlements = ":TelegramEntitlements.entitlements",
     infoplists = [
         ":TelegramInfoPlist",

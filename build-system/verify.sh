@@ -10,16 +10,18 @@ export API_ID="8"
 export API_HASH="7245de8e747a0d6fbe11f7cc14fcc0bb"
 
 export BUNDLE_ID="ph.telegra.Telegraph"
-export APP_CENTER_ID=""
+export APP_CENTER_ID="1234"
 export IS_INTERNAL_BUILD="false"
 export IS_APPSTORE_BUILD="true"
 export APPSTORE_ID="686449807"
 export APP_SPECIFIC_URL_SCHEME="tgapp"
 
-if [ -z "$BUILD_NUMBER" ]; then
-	echo "BUILD_NUMBER is not defined"
-	exit 1
-fi
+export BUILD_NUMBER="1234"
+
+# if [ -z "$BUILD_NUMBER" ]; then
+# 	echo "BUILD_NUMBER is not defined"
+# 	exit 1
+# fi
 
 export ENTITLEMENTS_APP="Telegram-iOS/Telegram-iOS-AppStoreLLC.entitlements"
 export DEVELOPMENT_PROVISIONING_PROFILE_APP="match Development ph.telegra.Telegraph"

@@ -4,8 +4,8 @@ set -e
 
 REQUIRED_BAZEL_VERSION="$(cat build-system/bazel_version)"
 
-if which bazel >/dev/null 2>&1; then
-	export BAZEL="$(which bazel)"
+if which bazelisk >/dev/null 2>&1; then
+	export BAZEL="$(which bazelisk)"
 else
 	echo "bazel not found in PATH"
 	echo "Please download bazel version $REQUIRED_BAZEL_VERSION:"

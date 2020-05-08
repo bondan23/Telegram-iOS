@@ -23,5 +23,5 @@ objc_library(
     ],
     visibility = [
         "//visibility:public",
-    ],
+    ]
 )

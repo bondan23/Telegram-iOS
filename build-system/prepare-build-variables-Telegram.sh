@@ -17,7 +17,7 @@ prepare_build_variables () {
 		    ;;
 	esac
 
-	local BAZEL="$(which bazel)"
+	local BAZEL="$(which bazelisk)"
 	if [ "$BAZEL" = "" ]; then
 		echo "bazel not found in PATH"
 		exit 1

@@ -2,7 +2,7 @@ APP_VERSION="1.0"
 CORE_COUNT=$(shell sysctl -n hw.logicalcpu)
 CORE_COUNT_MINUS_ONE=$(shell expr ${CORE_COUNT} \- 1)
 
-BAZEL=$(shell which bazel)
+BAZEL=$(shell which bazelisk)
 
 ifneq ($(BAZEL_CACHE_DIR),)
 	export BAZEL_CACHE_FLAGS=\

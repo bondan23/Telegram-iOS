@@ -23,6 +23,7 @@ objc_library(
     ]),
     copts = [
         "-I{}/PublicHeaders/LegacyComponents".format(package_name()),
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/SSignalKit/SSignalKit/Source"
     ],
     includes = [
         "PublicHeaders",

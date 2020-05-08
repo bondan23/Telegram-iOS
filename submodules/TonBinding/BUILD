@@ -11,6 +11,7 @@ objc_library(
     ]),
     copts = [
         "-std=c++14",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/SSignalKit/SSignalKit/Source"
     ],
     includes = [
         "Sources",
@@ -22,5 +23,5 @@ objc_library(
     ],
     visibility = [
         "//visibility:public",
-    ],
+    ]
 )

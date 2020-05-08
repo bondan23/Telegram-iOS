@@ -207,4 +207,11 @@ swift_library(
     visibility = [
         "//visibility:public",
     ],
+    copts = [
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/EncryptionProvider/PublicHeaders",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/OpenSSLEncryptionProvider/PublicHeaders",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/RMIntro/PublicHeaders",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/OpusBinding/PublicHeaders",
+        "-I/Users/bondanprasetyo/Documents/SwiftPlayground/Telegram-iOS/submodules/DeviceProximity/PublicHeaders",
+    ]
 )
